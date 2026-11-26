@@ -1,0 +1,2 @@
+# Ubuntu: Sales NFS share from Rocky
+10.0.0.10:/data/sales  /mnt/sales  nfs  defaults,_netdev,nofail  0 0

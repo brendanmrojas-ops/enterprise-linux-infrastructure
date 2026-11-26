@@ -1,0 +1,4 @@
+# IT help desk: limited admin rights
+Cmnd_Alias IT_SERVICES = /usr/bin/systemctl status *, /usr/bin/systemctl restart *
+Cmnd_Alias IT_LOGS = /usr/bin/journalctl, /usr/bin/journalctl *
+%it ALL=(root) IT_SERVICES, IT_LOGS

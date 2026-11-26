@@ -1,0 +1,5 @@
+# Rocky firewalld (zone: public). Only Ubuntu may use NFS and DNS.
+firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="10.0.0.20/32" service name="nfs" accept'
+firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="10.0.0.20/32" service name="dns" accept'
+firewall-cmd --permanent --remove-service=cockpit
+firewall-cmd --reload

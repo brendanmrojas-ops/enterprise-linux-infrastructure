@@ -1,0 +1,6 @@
+[Unit]
+Description=Back up the Sales shared folder
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/backup-sales.sh

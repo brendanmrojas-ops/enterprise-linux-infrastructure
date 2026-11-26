@@ -1,0 +1,2 @@
+# Rocky: LVM data volume
+/dev/mapper/data_vg-data_lv  /data  xfs  defaults,nofail  0 0
